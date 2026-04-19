@@ -109,17 +109,20 @@ Evaluated using standard regression metrics:
 - Created weekend indicator
 - Generated interaction between temperature and humidity
 
-bike-rental-prediction/
-│
-├── data/
-│   └── dataset.csv
-├── notebooks/
+bike-demand/
+│── data/
+│   └── bike_rent.csv
+│── notebooks/
 │   └── analysis.ipynb
-├── models/
-│   └── regmodel.pkl
-├── requirements.txt
-└── README.md
-```
+│── src/
+│   ├── preprocess.py
+│   ├── train.py
+│   ├── predict.py
+│── models/
+│   └── model.pkl
+│── app.py
+│── requirements.txt
+│── README.md
 
 ---
 ## Results
