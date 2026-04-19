@@ -1,36 +1,24 @@
-# 🚲 Bike Rental Demand Prediction
+# Bike Rental Demand Prediction
 
-## 📌 Project Overview
+##  Project Overview
 
 This project focuses on building a **machine learning regression model** to predict **bike rental demand** based on environmental and temporal features. Accurate demand prediction helps bike-sharing companies optimize fleet distribution, reduce operational costs, and improve user satisfaction.
 
 The project follows an **end-to-end ML workflow** including data preprocessing, exploratory data analysis (EDA), feature scaling, model training, evaluation, and deployment readiness.
-
 ---
-
-## 🎯 Problem Statement
-
+##  Problem Statement
 Predict the **number of bike rentals (target variable)** for a given day/hour using historical data such as:
-
 * Weather conditions
 * Temperature and humidity
 * Seasonality
 * Working/non-working day indicators
-
 This is a **supervised regression problem**.
-
 ---
-
-## 📊 Dataset Description
-
+## Dataset Description
 The dataset contains historical bike rental data with multiple numerical and categorical features.
-
 ### Target Variable
-
 * **`price / count`** (depending on dataset version): Total number of bikes rented
-
 ### Example Features
-
 * `temp` – Temperature
 * `atemp` – Feels-like temperature
 * `humidity` – Relative humidity
@@ -38,77 +26,54 @@ The dataset contains historical bike rental data with multiple numerical and cat
 * `season` – Season indicator
 * `workingday` – Working day flag
 * `holiday` – Holiday flag
-
 ---
-
-## 🛠️ Tech Stack
-
+##  Tech Stack
 * **Language:** Python
 * **Libraries:**
-
   * NumPy
   * Pandas
   * Matplotlib / Seaborn
   * Scikit-learn
 * **Model:** Linear Regression (baseline)
 * **Environment:** Jupyter Notebook
-
 ---
-
 ## 🔄 Machine Learning Pipeline
-
 ### 1. Data Loading
-
 * Loaded dataset using Pandas
 * Inspected shape, datatypes, and missing values
-
 ### 2. Data Preprocessing
-
 * Handled missing values using **median imputation**
 * Converted target variable where required
 * Feature-target separation
 * Train-test split (70/30)
-
 ### 3. Feature Scaling
-
 * Applied **StandardScaler** to input features
 * Prevented data leakage by fitting scaler only on training data
-
 ### 4. Model Training
-
 * Trained a **Linear Regression** model on scaled data
-
 ### 5. Model Evaluation
-
 Evaluated using standard regression metrics:
-
 * R² Score
 * Mean Squared Error (MSE)
 * Root Mean Squared Error (RMSE)
 * Mean Absolute Error (MAE)
-
 ### 6. Model Serialization
 
 * Saved trained model using `pickle`
 * Reloaded model for inference
-
 ---
-
 ## 📈 Evaluation Metrics
-
 | Metric   | Description                     |
 | -------- | ------------------------------- |
 | R² Score | Explained variance of the model |
 | MSE      | Penalizes large errors          |
 | RMSE     | Interpretable error magnitude   |
 | MAE      | Robust to outliers              |
-
 ---
 ## Feature Engineering
 - Extracted hour and weekday
 - Created weekend indicator
 - Generated interaction between temperature and humidity
-
 bike-demand/
 │── data/
 │   └── bike_rent.csv
@@ -123,10 +88,7 @@ bike-demand/
 │── app.py
 │── requirements.txt
 │── README.md
-
----
 ## Results
-
 | Model              | RMSE | MAE | R²  |
 |--------------------|------|-----|-----|
 | Linear Regression  | 180  | 140 | 0.72 |
