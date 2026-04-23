@@ -1,7 +1,8 @@
 # Bike Rental Demand Prediction
 
 Interface --
-![Bike UI](https://raw.githubusercontent.com/your-username/repo-name/main/assets/images/bike-ui.png)
+<img width="1536" height="1024" alt="ChatGPT Image Apr 23, 2026, 05_50_51 PM" src="https://github.com/user-attachments/assets/2543e386-14c6-468a-b03d-a6fd53d59271" />
+
 
 ##  Project Overview
 This project focuses on building a **machine learning regression model** to predict **bike rental demand** based on environmental and temporal features. Accurate demand prediction helps bike-sharing companies optimize fleet distribution, reduce operational costs, and improve user satisfaction.
